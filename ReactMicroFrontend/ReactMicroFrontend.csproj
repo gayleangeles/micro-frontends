@@ -23,6 +23,10 @@
     <UpToDateCheckInput Include="src" />
   </ItemGroup>
 
+  <Target Name="npm restore" BeforeTargets="BeforeBuild">
+    <Exec Command="npm install" />
+  </Target>
+
   <Target Name="react" AfterTargets="Build">
     <Exec Command="npm run build" />
   </Target>
