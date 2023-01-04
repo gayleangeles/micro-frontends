@@ -1,5 +1,6 @@
 ﻿import React from "react";
 import ReactDOM from "react-dom";
+import App from "./App"
 
 window.renderApp = () => {
     const domElement =
@@ -7,6 +8,6 @@ window.renderApp = () => {
         document.querySelector("#react-app");
 
     if (domElement) {
-        ReactDOM.render(<h1>Hello React!!!</h1>, domElement);
+        ReactDOM.render(<App />, domElement);
     }
 };

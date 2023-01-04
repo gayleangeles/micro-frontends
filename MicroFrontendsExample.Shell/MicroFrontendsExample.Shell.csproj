@@ -15,6 +15,10 @@
     <ProjectReference Include="..\ReactMicroFrontend\ReactMicroFrontend.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\dist\react\" />
+  </ItemGroup>
+
 
   <Target Name="npm restore" BeforeTargets="BeforeBuild">
     <Exec Command="npm install" />
