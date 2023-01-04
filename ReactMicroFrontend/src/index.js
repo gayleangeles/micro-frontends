@@ -7,6 +7,6 @@ window.renderApp = () => {
         document.querySelector("#react-app");
 
     if (domElement) {
-        ReactDOM.render(<h1>Hello, React🌐!</h1>, domElement);
+        ReactDOM.render(<h1>Hello React!</h1>, domElement);
     }
 };
