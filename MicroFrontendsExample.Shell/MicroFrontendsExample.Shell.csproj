@@ -28,8 +28,5 @@
     <Exec Command="npm run build" />
   </Target>
 
-  <Target Name="webpack clean" AfterTargets="Clean" Condition="Exists('node_modules')">
-    <Exec Command="npm run clean" />
-  </Target>
 
 </Project>
