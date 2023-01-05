@@ -4,11 +4,17 @@
 
 .top-row {
     height: 3.5rem;
-    background-color: rgba(0,0,0,0.4);
+    /*background-color: rgba(0,0,0,0.4);*/
+    background: #9E0707 0% 0% no-repeat padding-box;
 }
 
 .navbar-brand {
-    font-size: 1.1rem;
+    font-size: 26px;
+    text-align: center;
+    font: normal normal 600 26px/41px Raleway;
+    letter-spacing: 0.52px;
+    color: #FFFFFF;
+    opacity: 1;
 }
 
 .oi {
