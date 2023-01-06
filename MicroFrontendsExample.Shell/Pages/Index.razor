@@ -1,11 +1,42 @@
 ﻿@page "/"
 
-<PageTitle>Classic Home</PageTitle>
+<PageTitle>Blazor WASM</PageTitle>
 
-<div class="home-content">
-    <h1>Here’s Your Daily Dose of Dopamine</h1>
 
-    <p>Hear the roar of a Mustang as the ground starts to tremble and your legs start to shake. As always, Mustang draws upon its performance roots with features for enhanced handling, high-powered engine options and a classic Mustang design.</p>
+<div class="page">
+    <HxNavbar Color="ThemeColor.Danger">
+        <HxNavbarBrand>Blazor WASM</HxNavbarBrand>
+        <HxNavbarToggler/>
+        <HxNavbarCollapse>
+            <HxNav CssClass="me-auto mb-2 mb-lg-0">
+                <HxNavLink Href="/react">React</HxNavLink>
+            </HxNav>
+        </HxNavbarCollapse>
+    </HxNavbar>
+
+
+    <main>
+        <Hero Image="images/hero1.png" Title="Here’s Your Daily Dose of Dopamine" Text="Hear the roar of a Mustang as the ground starts to tremble and your legs start to shake. As always, Mustang draws upon its performance roots with features for enhanced handling, high-powered engine options and a classic Mustang design."></Hero>
+        <div class="px-4 py-5 my-5 text-center">
+            <h1 class="display-5 fw-bold">Featured Products</h1>
+        </div>
+        <div class="container pb-5">
+            <div class="row">
+
+                <Card Image="images/card1.png" Title="Card 1" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></Card>
+                <Card Image="images/card2.png" Title="Card 2" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></Card>
+                <Card Image="images/card3.png" Title="Card 3" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."></Card>
+            </div>
+        </div>
+        <Hero Image="images/hero2.png" Title="Product Spotlight" Text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut."></Hero>
+
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 pt-0 mt-0 border-top bg-dark">
+                <div class="col-md-4 d-flex align-items-center">
+                    <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                    </a>
+                    <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+                </div>
+            </footer>
+    </main>
 </div>
-
-

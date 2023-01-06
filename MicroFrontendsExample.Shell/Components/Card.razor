@@ -1,0 +1,25 @@
+﻿<div class="col">
+    <HxCard CssClass="text-center" ImageAlt="Grey area"
+            ImageSrc=@Image
+            ImageHeight="180"
+            style="width: 18rem;">
+        <BodyTemplate>
+            <HxCardTitle>@Title</HxCardTitle>
+            <HxCardText>@Text</HxCardText>
+            <HxButton Color="ThemeColor.Danger">Read More</HxButton>
+        </BodyTemplate>
+    </HxCard>
+</div>
+
+@code {
+
+    [Parameter]
+    public string Title {get; set;}
+
+    [Parameter]
+    public string Image {get; set;}
+
+    [Parameter]
+    public string Text {get; set;}
+  
+}

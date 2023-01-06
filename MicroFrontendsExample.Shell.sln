@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroFrontendsExample.Shell", "MicroFrontendsExample.Shell\MicroFrontendsExample.Shell.csproj", "{98D8070C-2328-4551-9F04-25E88CB3B662}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroFrontendsExample.Shell", "MicroFrontendsExample.Shell\MicroFrontendsExample.Shell.csproj", "{98D8070C-2328-4551-9F04-25E88CB3B662}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactMicroFrontend", "ReactMicroFrontend\ReactMicroFrontend.csproj", "{8463E965-9350-4EB6-87B8-19C91EFD42F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReactMicroFrontend", "ReactMicroFrontend\ReactMicroFrontend.csproj", "{8463E965-9350-4EB6-87B8-19C91EFD42F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

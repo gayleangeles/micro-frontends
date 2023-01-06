@@ -4,14 +4,27 @@ import styled from 'styled-components';
 const Container = styled.div`
   display: flex;
   flexdirection: column;
+  height: 100vh;
+`;
+
+const NavBar = styled.div`
+  background-color: #fbfbfb;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 20px;
+  align-items: center;
+  box-shadow: '0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)';
+  display: flex;
 `;
 
 const NavItem = styled.a`
   margin-right: 80px;
-  color: #3e3e3e;
   text-decoration: none;
-  font-size: 22px;
-  font-weight: 'bold';
+  font: normal normal bold 22px/24px;
+  letter-spacing: 0px;
+  color: #3e3e3e;
 `;
 
 const TextInput = styled.input`
@@ -20,21 +33,25 @@ const TextInput = styled.input`
   border-radius: 8px;
   width: 450px;
   height: 50px;
+  background: #f3f7f9 0% 0% no-repeat padding-box;
+`;
+
+const LogInForm = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  padding: 40px;
+  border-radius: 8px;
+  margin: auto;
+  background: #ffffff 0% 0% no-repeat padding-box;
 `;
 
 function App() {
   return (
     <Container>
-      <div
-        style={{
-          padding: '20px',
-          display: 'flex',
-          alignItems: 'center',
-          boxShadow:
-            '0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)',
-        }}
-      >
-        <span style={{ fontWeight: 'bold', fontSize: '18px' }}>DeV</span>
+      <NavBar>
+        <span style={{ fontWeight: 'bold', fontSize: '18px' }}>React</span>
         <div
           style={{
             display: 'flex',
@@ -59,20 +76,9 @@ function App() {
         >
           Sign up
         </button>
-      </div>
+      </NavBar>
 
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignSelf: 'center',
-          boxShadow:
-            '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)',
-          padding: '40px',
-          borderRadius: '8px',
-          marginTop: '100px',
-        }}
-      >
+      <LogInForm>
         <span
           style={{
             fontSize: '29px',
@@ -160,7 +166,7 @@ function App() {
         >
           LOG IN
         </button>
-      </div>
+      </LogInForm>
     </Container>
   );
 }

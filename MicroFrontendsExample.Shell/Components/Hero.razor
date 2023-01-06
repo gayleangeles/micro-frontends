@@ -1,0 +1,25 @@
+﻿<article class="content px-4 home-content" style="@BackgroundStyle(Image)">
+
+    <div class="px-4 py-5 my-5 pb-0 mb-0 text-center">
+        <h1 class="display-5 fw-bold text-white">@Title</h1>
+        <div class="col-lg-6 mx-auto text-white">
+            <p class="lead mb-4">@Text</p>
+
+        </div>
+    </div>
+</article>
+@code {
+    [Parameter]
+    public string Title {get; set;}
+
+    [Parameter]
+    public string Text {get; set;}
+
+    [Parameter]
+    public string Image {get; set;}
+
+    private string BackgroundStyle(string background)
+    {
+        return $"background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), transparent url('{background}') 0% 0% no-repeat padding-box;";
+    }
+}
