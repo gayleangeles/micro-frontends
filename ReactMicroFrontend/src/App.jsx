@@ -1,4 +1,6 @@
-﻿import React from "react";
+﻿import React from "react"
+
+export default App
 
 function App() {
   return (
@@ -197,7 +199,7 @@ function App() {
         </button>
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
